@@ -11,9 +11,22 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+//width and precision Manipulators
+#include<iostream>
+using namespace std;
+int main()
+{
+float pi=22.0/7.0;
+int i;
+cout<<"Value of PI:\n";
+for (i=1;i<=10;i++)
+{
+cout.width(i+1);
+cout.precision(i);
+cout<<pi<<"\n";
+}
+return 0;
+}
 
 - Bulleted
 - List
